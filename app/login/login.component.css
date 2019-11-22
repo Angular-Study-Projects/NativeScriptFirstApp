@@ -25,6 +25,5 @@ FlexboxLayout {
     color: #fff;
   }
   TextField {
-    color: #C4AFB4;
-    /* placeholder-color: #C4AFB4; */
+    color: black;
   }
