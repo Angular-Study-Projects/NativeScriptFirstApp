@@ -24,7 +24,16 @@ export class GroceryService {
             catchError(this.handleErrors)
         );
     }
-    
+
+    delete(id: string) {
+        return this.http.delete(
+            this.baseUrl + "/" + id,
+            { headers: this.getCommonHeaders() }
+        ).pipe(
+            catchError (this.handleErrors)
+        );
+    }
+
     load() {
         // Kinvey-specific syntax to sort the groceries by last modified time. Don’t worry about the details here.
         let params = {
