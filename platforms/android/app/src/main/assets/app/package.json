@@ -6,5 +6,5 @@
     },
     "name": "nativescript-template-ng-groceries",
     "version": "3.0.0",
-    "main": "main.js"
+    "main": "bundle"
 }
